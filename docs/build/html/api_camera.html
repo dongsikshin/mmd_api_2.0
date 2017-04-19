@@ -1,0 +1,645 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>camera &mdash; Momoda API 2.0 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Momoda API 2.0 0.1 documentation" href="index.html"/>
+        <link rel="up" title="API Referance" href="api_ref.html"/>
+        <link rel="next" title="object" href="api_object.html"/>
+        <link rel="prev" title="API Referance" href="api_ref.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Momoda API 2.0
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="concept.html">Concept Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="api_ref.html">API Referance</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">camera</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-changeto2d">camera.changeTo2D()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#parameters">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-changeto3d">camera.changeTo3D()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-geteyepos">camera.getEyePos()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-fit-obj">camera.fit(obj)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-flyto-json">camera.flyTo(<em>{json}</em>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-lookat-pos">camera.lookAt(pos)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-setposition-pos">camera.setPosition(pos)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id13">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id14">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-stopflying">camera.stopFlying()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id15">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_object.html">object</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qna.html">Q &amp; A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Revise History</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Momoda API 2.0</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api_ref.html">API Referance</a> &raquo;</li>
+        
+      <li>camera</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api_camera.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="camera">
+<h1>camera<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h1>
+<p>Controls camera objects within a scene.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="14%" />
+<col width="43%" />
+<col width="14%" />
+<col width="29%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Description</th>
+<th class="head">Returns</th>
+<th class="head">Parameters</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>changeTo2D</td>
+<td>change scene mode to 2D</td>
+<td>none</td>
+<td><code class="docutils literal"><span class="pre">camera.changeTo2D()</span></code></td>
+</tr>
+<tr class="row-odd"><td>changeTo3D</td>
+<td>Change the Scene mode to 3D</td>
+<td>none</td>
+<td><code class="docutils literal"><span class="pre">camera.changeTo3D()</span></code></td>
+</tr>
+<tr class="row-even"><td>getEyePos</td>
+<td>Get positions of all camera</td>
+<td>Vector3</td>
+<td><code class="docutils literal"><span class="pre">camera.getEyePos()</span></code></td>
+</tr>
+<tr class="row-odd"><td>getTargetPos</td>
+<td>Get the position of the fixation point of the camera(s)</td>
+<td>Vector3</td>
+<td><code class="docutils literal"><span class="pre">camera.getTargetPos()</span></code></td>
+</tr>
+<tr class="row-even"><td>fit</td>
+<td>Focus all cameras on specified object</td>
+<td>none</td>
+<td><code class="docutils literal"><span class="pre">camera.fit(obj)</span></code></td>
+</tr>
+<tr class="row-odd"><td>flyTo</td>
+<td>Move the camera to new position specified by the function</td>
+<td>none</td>
+<td><code class="docutils literal"><span class="pre">camera.flyTo({json})</span></code></td>
+</tr>
+<tr class="row-even"><td>lookAt</td>
+<td>Set the Point of view of a camera</td>
+<td>none</td>
+<td><code class="docutils literal"><span class="pre">camera.lookAt(pos)</span></code></td>
+</tr>
+<tr class="row-odd"><td>setPosition</td>
+<td>Set the position of a camera</td>
+<td>none</td>
+<td><code class="docutils literal"><span class="pre">camera.setPosition(pos)</span></code></td>
+</tr>
+<tr class="row-even"><td>stopFlying</td>
+<td>Stops the camera at the position specified by the function. Often used with the function <code class="docutils literal"><span class="pre">FlyTo</span></code></td>
+<td>none</td>
+<td><code class="docutils literal"><span class="pre">camera.stopFlying()</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="camera-changeto2d">
+<h2>camera.changeTo2D()<a class="headerlink" href="#camera-changeto2d" title="Permalink to this headline">¶</a></h2>
+<p>Change scene mode to 2D.</p>
+<div class="section" id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h3>
+<p>none</p>
+</div>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Changes the scene mode to &#39;2D&#39;.</span>
+<span class="c1">// If the current scene mode is already in 2D, the scene does not change</span>
+<span class="nx">camera</span><span class="p">.</span><span class="nx">changeTo2D</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="camera-changeto3d">
+<h2>camera.changeTo3D()<a class="headerlink" href="#camera-changeto3d" title="Permalink to this headline">¶</a></h2>
+<p>Change scene mode to 3D.</p>
+<div class="section" id="id1">
+<h3>Parameters<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>none</p>
+</div>
+<div class="section" id="id2">
+<h3>Example<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Changes the scene mode to &#39;3D&#39;.</span>
+<span class="c1">// If the current scene mode is already in 3D, the scene does not change</span>
+<span class="nx">camera</span><span class="p">.</span><span class="nx">changeTo3D</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="camera-geteyepos">
+<h2>camera.getEyePos()<a class="headerlink" href="#camera-geteyepos" title="Permalink to this headline">¶</a></h2>
+<p>Get the current position of the camera.</p>
+<div class="section" id="id3">
+<h3>Parameters<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>none</p>
+</div>
+<div class="section" id="id4">
+<h3>Example<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// print the position of the camera</span>
+<span class="nx">print</span><span class="p">(</span><span class="nx">camera</span><span class="p">.</span><span class="nx">getEyePos</span><span class="p">());</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>camera.getTargetPos()
+====================++</p>
+<p>Get the fixation point position of the camera</p>
+</div>
+<div class="section" id="id5">
+<h3>Parameters<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>none</p>
+</div>
+<div class="section" id="id6">
+<h3>Example<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// print fixation point position of the camera</span>
+<span class="nx">print</span><span class="p">(</span><span class="nx">camera</span><span class="p">.</span><span class="nx">getTargetPos</span><span class="p">());</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="camera-fit-obj">
+<h2>camera.fit(obj)<a class="headerlink" href="#camera-fit-obj" title="Permalink to this headline">¶</a></h2>
+<p>Focus camera on specified object</p>
+<div class="section" id="id7">
+<h3>Parameters<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>obj</td>
+<td>object referance, which will be focued by camera</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id8">
+<h3>Example<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/** create box object and have the camera focus on the object.</span>
+<span class="cm">The focus point is the center point of the object.</span>
+<span class="cm">The position of the camera is based on size of the object */</span>
+
+<span class="kd">var</span> <span class="nx">object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="s2">&quot;AB052B5B646E4A48B9C045096FF9B088&quot;</span><span class="p">);</span>
+<span class="nx">camera</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="camera-flyto-json">
+<h2>camera.flyTo(<em>{json}</em>)<a class="headerlink" href="#camera-flyto-json" title="Permalink to this headline">¶</a></h2>
+<p>Move the position and the fixation point of the camera within a certain time, then, execute a function.</p>
+<div class="section" id="id9">
+<h3>Parameters<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>{json}</em></td>
+<td><code class="docutils literal"><span class="pre">json</span> <span class="pre">message</span></code>, including position, fixation point ,time, execute function</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id10">
+<h3>Example<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/** move camera to position (2,3,4) and change the fixation point to (3,4,5 )</span>
+<span class="cm">within 2 seconds, then print “OK”.*/</span>
+
+<span class="nx">camera</span><span class="p">.</span><span class="nx">flyTo</span><span class="p">({</span>
+ <span class="s2">&quot;eye&quot;</span><span class="o">:</span><span class="nx">Vector3</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
+ <span class="s2">&quot;target&quot;</span><span class="o">:</span><span class="nx">Vector3</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span>
+ <span class="s2">&quot;time&quot;</span><span class="o">:</span><span class="mf">2.0</span><span class="p">,</span>
+ <span class="s2">&quot;complete&quot;</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span><span class="nx">print</span><span class="p">(</span><span class="s2">&quot;OK!&quot;</span><span class="p">)}</span>
+ <span class="p">})</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="camera-lookat-pos">
+<h2>camera.lookAt(pos)<a class="headerlink" href="#camera-lookat-pos" title="Permalink to this headline">¶</a></h2>
+<p>Set camera&#8217;s fixation point as given Vector</p>
+<div class="section" id="id11">
+<h3>Parameters<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>pos</td>
+<td>Vector3 variable; camera&#8217;s fixation point</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id12">
+<h3>Example<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// set camera&#39;s fixation point to be the center point of the object &#39;obj&#39;.</span>
+<span class="nx">camera</span><span class="p">.</span><span class="nx">lookAt</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">center</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="camera-setposition-pos">
+<h2>camera.setPosition(pos)<a class="headerlink" href="#camera-setposition-pos" title="Permalink to this headline">¶</a></h2>
+<p>Set camera&#8217;s position as given Vector</p>
+<div class="section" id="id13">
+<h3>Parameters<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>pos</td>
+<td><code class="docutils literal"><span class="pre">Vector3</span></code> camera&#8217;s position</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id14">
+<h3>Example<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// set camera&#39;s position to (0,1,2)</span>
+<span class="nx">camera</span><span class="p">.</span><span class="nx">setPosition</span><span class="p">(</span><span class="nx">Vector3</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">));</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="camera-stopflying">
+<h2>camera.stopFlying()<a class="headerlink" href="#camera-stopflying" title="Permalink to this headline">¶</a></h2>
+<p>Set camera&#8217;s position as given Vector</p>
+<div class="section" id="id15">
+<h3>Parameters<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>none</p>
+</div>
+<div class="section" id="id16">
+<h3>Example<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Create a button named&#39;Execute&#39;.</span>
+<span class="c1">// Clicking on the button will stop moving the position or fixation point of the camera.</span>
+
+<span class="nx">camera</span><span class="p">.</span><span class="nx">setPosition</span><span class="p">(</span><span class="nx">Vector3</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">));</span>
+
+<span class="nx">camera</span><span class="p">.</span><span class="nx">flyTo</span><span class="p">({</span>
+
+ <span class="s2">&quot;eye&quot;</span><span class="o">:</span><span class="nx">Vector3</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
+
+ <span class="s2">&quot;target&quot;</span><span class="o">:</span><span class="nx">Vector3</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span>
+
+ <span class="s2">&quot;time&quot;</span><span class="o">:</span><span class="mf">2.0</span><span class="p">,</span>
+
+ <span class="s2">&quot;complete&quot;</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span><span class="nx">print</span><span class="p">(</span><span class="s2">&quot;OK!&quot;</span><span class="p">)}})</span>
+
+ <span class="nx">gui</span><span class="p">.</span><span class="nx">createButton</span><span class="p">(</span><span class="s2">&quot;Execute&quot;</span><span class="p">,</span> <span class="nx">Rect</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">camera</span><span class="p">.</span><span class="nx">stopFlying</span><span class="p">();})</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api_object.html" class="btn btn-neutral float-right" title="object" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="api_ref.html" class="btn btn-neutral" title="API Referance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, uinnova inc..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

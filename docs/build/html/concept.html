@@ -1,0 +1,401 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Concept Guide &mdash; Momoda API 2.0 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Momoda API 2.0 0.1 documentation" href="index.html"/>
+        <link rel="next" title="Overview" href="functions.html"/>
+        <link rel="prev" title="Welcome to Momoda API 2.0’s documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Momoda API 2.0
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Concept Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-and-scene">Module and Scene</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module">Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scene">Scene</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-library">Module Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scene-levels">Scene Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-developement">API Developement</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-new-api-project">Create New API Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deploy-api-project-to-scene">Deploy API Project to Scene</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#api-namespace">API Namespace</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_ref.html">API Referance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qna.html">Q &amp; A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Revise History</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Momoda API 2.0</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Concept Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/concept.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="concept-guide">
+<h1>Concept Guide<a class="headerlink" href="#concept-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-and-scene">
+<h2>Module and Scene<a class="headerlink" href="#module-and-scene" title="Permalink to this headline">¶</a></h2>
+<p>There are two basic and import concepts in Momoda: module and scene.</p>
+<div class="section" id="module">
+<h3>Module<a class="headerlink" href="#module" title="Permalink to this headline">¶</a></h3>
+<p>Module is <em>polygon representation</em> of object. 3D object could presents something from real world, concept or just your imagination.</p>
+<p>Module in Momoda shares the same of idea of 3D object in general, those 3D object could be organized and put into 3D scene like Lego.</p>
+<p>Momoda also provides ‘official’ module library and could be used for free during 3D scene creation. User could also leverage uinnova’s profession service to create customized modules. Besides, Momoda also provide a 3DSMax plugin which could upload 3D object created in 3DSMax to Momoda’s module library, and user could create and use their own module using this plugin, which make Momoda very extensible in term of module creation.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="scene">
+<h3>Scene<a class="headerlink" href="#scene" title="Permalink to this headline">¶</a></h3>
+<p>Scene this one of the basic concept in Momoda. By use momoda’s free drawing studio, user can place , combine and layout 3D modules/objects into a scene in drag and drop fashion. Typical scene could be campus, a factory, a harbor, and any another things you may think of. We call them “Momoda Scene”.</p>
+<p>Momoda scene are stored in Momoda Cloud, which could be opened by own later on for editing, preview, or API debugging. Momoda scene can also be download and running locally as “Momoda Offline Edition” (may need purchase license issued by uinnova inc.).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="module-library">
+<h2>Module Library<a class="headerlink" href="#module-library" title="Permalink to this headline">¶</a></h2>
+<p>There are three common objects in right navigation bar of momoda studio: module, texture and function.</p>
+<ul class="simple">
+<li><strong>Module</strong></li>
+</ul>
+<p>Objects like building, car, people, desk, etc. User could also upload their custom objects through Momoda 3DSMax plugin.</p>
+<ul class="simple">
+<li><strong>Texture</strong></li>
+</ul>
+<p>Textures to cover the surface of object, also supports use custom texture upload by user.</p>
+<ul class="simple">
+<li><strong>Function</strong></li>
+</ul>
+<p>Effects such as fire, rain, flash, or assistant function such as drawing line, pipeline, or text. Function are system build-in and do not supports user upload at this time.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="scene-levels">
+<h2>Scene Levels<a class="headerlink" href="#scene-levels" title="Permalink to this headline">¶</a></h2>
+<p>There are four level in Momoda scene: campus, building, stories and rooms.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><strong>Campus</strong></li>
+</ul>
+<p>Upmost level of a scene.</p>
+<a class="reference internal image-reference" href="_images/campus.png"><img alt="Campus" class="align-center" src="_images/campus.png" style="width: 480px;" /></a>
+<ul class="simple">
+<li><strong>Building</strong></li>
+</ul>
+<p>Buildings (do not includes building facade)</p>
+<a class="reference internal image-reference" href="_images/building.png"><img alt="Building" class="align-center" src="_images/building.png" style="width: 480px;" /></a>
+<ul class="simple">
+<li><strong>Stories</strong></li>
+</ul>
+<a class="reference internal image-reference" href="_images/stories.png"><img alt="Stories" class="align-center" src="_images/stories.png" style="width: 480px;" /></a>
+<ul class="simple">
+<li><strong>Room</strong></li>
+</ul>
+<a class="reference internal image-reference" href="_images/rooms.png"><img alt="Rooms" class="align-center" src="_images/rooms.png" style="width: 480px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="api-developement">
+<h2>API Developement<a class="headerlink" href="#api-developement" title="Permalink to this headline">¶</a></h2>
+<p>Mododa supports online development via <strong>Momoda API developing web page</strong>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="create-new-api-project">
+<h3>Create New API Project<a class="headerlink" href="#create-new-api-project" title="Permalink to this headline">¶</a></h3>
+<p>There a two pane in developing web page, left pane is for script editing, right pane is for running scripts in 3D scene. To begin a new API development project, visit the  Momoda API developing web page, input the ID of target 3D  scene, then click <code class="docutils literal"><span class="pre">New</span></code> button.</p>
+</div>
+<div class="section" id="deploy-api-project-to-scene">
+<h3>Deploy API Project to Scene<a class="headerlink" href="#deploy-api-project-to-scene" title="Permalink to this headline">¶</a></h3>
+<p>To includes API script into your own scene, simply copy all the script source code and paste to the text box of  <code class="docutils literal"><span class="pre">My</span> <span class="pre">Projects</span></code> —&gt; <code class="docutils literal"><span class="pre">Target</span> <span class="pre">Scene</span></code> —&gt; <code class="docutils literal"><span class="pre">Configure</span> <span class="pre">Scene</span></code>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="keyboard-shortcuts">
+<h3>Keyboard Shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Permalink to this headline">¶</a></h3>
+<p>Below are keyboard shortcuts in <em>Momoda API debug page</em>:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">Ctrl+Enter</span></code> Run Script</li>
+<li><code class="docutils literal"><span class="pre">Ctrl+R</span></code> Reset Scene</li>
+<li><code class="docutils literal"><span class="pre">Ctrl+/</span></code>  Comment/Uncomment source code</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="api-namespace">
+<h3>API Namespace<a class="headerlink" href="#api-namespace" title="Permalink to this headline">¶</a></h3>
+<p>Momoda API functions are grouped in following namespaces:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Namespace</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>camera</td>
+<td>camera control</td>
+</tr>
+<tr class="row-odd"><td>object</td>
+<td>create, search or modify objects in 3D scene</td>
+</tr>
+<tr class="row-even"><td>gui</td>
+<td>manage user interface in 3D scene</td>
+</tr>
+<tr class="row-odd"><td>BaseObject</td>
+<td>control existing objects</td>
+</tr>
+<tr class="row-even"><td>ScriptObject</td>
+<td>associate scripts on existing object</td>
+</tr>
+<tr class="row-odd"><td>util</td>
+<td>common functions</td>
+</tr>
+<tr class="row-even"><td>input</td>
+<td>keyboard and mouse events</td>
+</tr>
+<tr class="row-odd"><td>console</td>
+<td>management console</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="functions.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to Momoda API 2.0’s documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, uinnova inc..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
