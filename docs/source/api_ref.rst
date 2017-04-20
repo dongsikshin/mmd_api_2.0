@@ -9,4 +9,5 @@ API Referance
    api_camera
    api_object
    api_gui
+   api_basic_object
 

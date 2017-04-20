@@ -22,7 +22,7 @@ Overview
 
 |
 
-camera.changeTo2D()
+camera.changeTo2D
 ====================
 
 Change scene mode to 2D.
@@ -44,7 +44,7 @@ Example
 
 |
 
-camera.changeTo3D()
+camera.changeTo3D
 ====================
 
 Change scene mode to 3D.
@@ -67,7 +67,7 @@ Example
 
 |
 
-camera.getEyePos()
+camera.getEyePos
 ====================
 
 Get the current position of the camera.
@@ -87,7 +87,7 @@ Example
 
 |
 
-camera.getTargetPos()
+camera.getTargetPos
 ====================++
 
 Get the fixation point position of the camera
@@ -107,7 +107,7 @@ Example
 
 |
 
-camera.fit(obj)
+camera.fit
 ====================
 
 Focus camera on specified object
@@ -137,7 +137,7 @@ Example
 
 |
 
-camera.flyTo(*{json}*)
+camera.flyTo
 =======================
 
 Move the position and the fixation point of the camera within a certain time, then, execute a function.
@@ -169,7 +169,7 @@ Example
 
 |
 
-camera.lookAt(pos)
+camera.lookAt
 ====================
 
 Set camera's fixation point as given Vector
@@ -194,7 +194,7 @@ Example
 
 |
 
-camera.setPosition(pos)
+camera.setPosition
 =======================
 
 Set camera's position as given Vector
@@ -220,7 +220,7 @@ Example
 
 |
 
-camera.stopFlying()
+camera.stopFlying
 ====================
 
 Set camera's position as given Vector
