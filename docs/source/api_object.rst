@@ -2,11 +2,10 @@
 object
 *****************
 
-Control the objects within the scene.
-
-
 Overview
 =========
+Control the objects within the scene.
+
 .. csv-table::
     :header: Name, Description, Returns, Parameters
     :widths: auto

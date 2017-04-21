@@ -10,4 +10,6 @@ API Referance
    api_object
    api_gui
    api_basic_object
+   api_script
+   api_util
 

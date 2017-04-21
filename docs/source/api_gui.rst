@@ -2,10 +2,11 @@
 gui
 ***************
 
-Control graphical user interface  within the scene
-
 Overview
 =========
+
+Control graphical user interface  within the scene.
+
 .. csv-table::
     :header: Name, Description, Returns, Parameters
     :widths: 5, 15,5,10
