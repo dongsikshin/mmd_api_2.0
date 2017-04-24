@@ -88,7 +88,7 @@ Example
 |
 
 camera.getTargetPos
-====================++
+====================
 
 Get the fixation point position of the camera
 
