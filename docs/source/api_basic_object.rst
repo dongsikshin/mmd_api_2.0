@@ -7,36 +7,35 @@ Overview
 Provides actions on object.
 
 .. csv-table::
-    :header: Name, Description, Returns, Parameters
-    :widths: auto
+    :header: Name, Description, Returns
+    :widths: 10,50,10
 
-    addGravity,Add a gravity value to a specified object,none,"``BaseObject.addGravity(mass)``"
-    addScript,Add a script to a specified object,Returns the type of script added to the object,"``BaseObject.addScript(script, name)``"
-    addTail,Add a tail to a specified object. Commonly used with the function movePath,none,"``BaseObject.addTail({json})``"
-    clone,Copy an existing object,baseObject,"``BaseObject.clone()``"
-    destroy,Remove an existing object,BaseObject,"``BaseObject.destroy()``"
-    getPosition,Acquire the position of a specified object,Vector3,"``BaseObject.getPosition()``"
-    getScale,Acquire the scale of a specified object,Vector3,"``BaseObject.getScale()``"
-    movePath,Move object by a specified parameter,none,"``BaseObject.movePath({json})``"
-    moveTo,Move object to a position within a given time,none,"``BaseObject.(pos,time)``"
-    pitch,Angel of rotation(in degree) of the object around its pivot point along X axis,none,"``BaseObject.pitch(degree)``"
-    playAnim,Play an animation,none,"``BaseObject.playAnim(animName)``"
-    removeScript,Remove a script from the specified object,none,"``BaseObject.removeScript(name)``"
-    roll,Angel of rotation (in degree) of the object around its pivot point along the Z axis,none,"``BaseObject.roll(degree)``"
-    setAnimSpeed,Set the animation speed of a specified object,none,"``BaseObject.setAnimSpeed(speed)``"
-    setColor,Set the color of a specified object,none,"``BaseObject.setColor(color)``"
-    setColorFlash,"Set the flash state, flash color and flash time of a specified object",none,"``BaseObject.setColorFlash(enable, color,time)``"
-    setPickEnabled,Set the selectable state of the specified object. Commonly used with the'Mouse event'functions,none,"``BaseObject.setPickEnabled(enable)``"
-    setPosition,Set the object's position,none,"``BaseObject.setPosition(x,y,z)``"
-    setPositionXZ,Set the object's horizontal position,none,"``BaseObject.setPositionXZ(x,z)``"
-    setPositionY,Set the object's position along the Y axis,none,"``BaseObject.setPositionY(y)``"
-    SetScale,Set the scale of the object,none,"``BaseObject.setScale(x,y,z)``"
-    setTransparent,Set the transparency of a specified object,none,"``BaseObject.setTransparent(trans)``"
-    stopAnim,Stop a specified object's animation,none,"``BaseObject.stopAnim()``"
-    stopMoving,Stop the object moving,none,"``BaseObject.stopMoving()``"
-    transformPoint,Change specified coordinates of object from relative coordinates to absolute coordinates,Vector3,"``BaseObject.transformPoint(pos)``"
-    translate,Move a specified object in a specified direction and distance,Vector3,"``BaseObject.translate(pos)``"
-    yaw,Angel of rotation (in degree) of the object around its pivot point along the Y axis,none,"``BaseObject.yaw(degree)``"
+    addGravity,"Add a gravity value to a specified object",none
+    addScript,"Add a script to a specified object,Returns the type of script added to the object", ``script``
+    addTail,"Add a tail to a specified object. Commonly used with the function movePath",none
+    clone,"Copy an existing object",``BaseObject``
+    destroy,"Remove an existing object",``BaseObject``
+    getPosition,"Acquire the position of a specified object",``Vector3``
+    getScale,"Acquire the scale of a specified object,``Vector3``
+    movePath,Move object by a specified parameter",none
+    moveTo,"Move object to a position within a given time",none
+    pitch,"Angel of rotation(in degree) of the object around its pivot point along X axis",none
+    removeScript,"Remove a script from the specified object",none
+    roll,"Angel of rotation (in degree) of the object around its pivot point along the Z axis",none
+    setAnimSpeed,"Set the animation speed of a specified object",none
+    setColor,"Set the color of a specified object",none
+    setColorFlash,"Set the flash state, flash color and flash time of a specified object",none
+    setPickEnabled,"Set the selectable state of the specified object. Commonly used with *mouse event* functions",none
+    setPosition,"Set the object's position",none
+    setPositionXZ,"Set the object's horizontal position",none
+    setPositionY,"Set the object's position along the Y axis",none
+    setScale,"Set the scale of the object",none
+    setTransparent,"Set the transparency of a specified object",none
+    stopAnim,"Stop a specified object's animation",none
+    stopMoving,"Stop the object moving",none
+    transformPoint,"Change specified coordinates of object from relative coordinates to absolute coordinates",``Vector3``
+    translate,"Move a specified object in a specified direction and distance",``Vector3``
+    yaw,"Angel of rotation (in degree) of the object around its pivot point along the Y axis",none
 
 |
 

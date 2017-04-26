@@ -10,7 +10,7 @@ Overview
     :header: Name, Description, Returns, Parameters
     :widths: 5, 15,5,10
 
-    changeTo2D, change scene mode to 2D, none, ``camera.changeTo2D()``
+    changeTo2D, Change scene mode to 2D, none, ``camera.changeTo2D()``
     changeTo3D, Change the Scene mode to 3D, none, ``camera.changeTo3D()``
     getEyePos,	Get positions of all camera, Vector3,	``camera.getEyePos()``
     getTargetPos,	Get the position of the fixation point of the camera(s),	Vector3,	``camera.getTargetPos()``

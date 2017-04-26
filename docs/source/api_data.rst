@@ -121,7 +121,10 @@ HTTP POST
 
         }
 
-        request will push init data in JSON format {"Initialized Data":"Initialized Data"} to object ``cabinet1`` in scene ``20170320095733039126770``
+.. note::
+
+    request will push init data in JSON format {"Initialized Data":"Initialized Data"} to object ``cabinet1`` in scene ``20170320095733039126770``
+
 
 |
 
@@ -231,7 +234,7 @@ HTTP GET
 
 - sample request in html/javascript
 
-.. code-block:: text
+.. code-block:: html
    :linenos:
 
 

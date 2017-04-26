@@ -7,14 +7,13 @@ Overview
 Control the objects within the scene.
 
 .. csv-table::
-    :header: Name, Description, Returns, Parameters
-    :widths: auto
+    :header: Name, Description, Returns
+    :widths:  10, 20, 50
 
-    create,	Create an object,Returns the object type of the created object,	"``object.create(bundleId,parentObj,callback,pos,scale)``"
-    createArrowLine, "Create an arrow line", "Returns the object type of the created arrow line", "``object.createArrowLine(vertices,{json})``"
-    createCurveLine,"Create a curved line", "Returns the object type of the curved line",	"``object.createCurveLine(vertices, bundleOrColorOrMat, parentObj, width, textiling, texOffSet)``"
-    destroyAll,	Delete all the objects created by a script,none,``object.destroyAll()``
-    find,"Find the object using uid", "Returns the object type of all exisiting objects", ``object.find(uid)``
+    create,	Create an object,Returns the object type of the created object
+    createArrowLine, "Create an arrow line", "Returns the object type of the created arrow line"
+    createCurveLine,"Create a curved line", "Returns the object type of the curved line"
+    destroyAll,	Delete all the objects created by a script,"none "
 
 |
 
