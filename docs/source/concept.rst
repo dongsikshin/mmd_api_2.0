@@ -7,12 +7,12 @@ model and Scene
 
 There are two basic and import concepts in Momoda: model and scene.
 
-model
+Model
 ^^^^^^^^^^^^
 
-model is *polygon representation* of object. 3D object could presents something from real world, concept or just your imagination. 
+Model is *polygon representation* of object. 3D object could presents something from real world, concept or just your imagination. 
 
-model in Momoda shares the same of idea of 3D object in general, those 3D object could be organized and put into 3D scene like Lego.
+Model in Momoda shares the same of idea of 3D object in general, those 3D object could be organized and put into 3D scene like Lego.
 
 Momoda also provides ‘official’ model library and could be used for free during 3D scene creation. User could also leverage uinnova’s profession service to create customized models. Besides, Momoda also provide a 3DSMax plugin which could upload 3D object created in 3DSMax to Momoda’s model library, and user could create and use their own model using this plugin, which make Momoda very extensible in term of model creation.
 
@@ -27,12 +27,12 @@ Momoda scene are stored in Momoda Cloud, which could be opened by own later on f
 
 |
 
-model Library
+Model Library
 ==================
 
 There are three common objects in right navigation bar of momoda studio: model, texture and function.
 
-- **model**
+- **Model**
 
 Objects like building, car, people, desk, etc. User could also upload their custom objects through Momoda 3DSMax plugin.
 
