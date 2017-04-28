@@ -16,7 +16,7 @@ Locate your scene in Momoda, click [Configure], then paste script source code in
 
 - Why I cannot play animation on custom object ？
 
-Object animation is created during the module process, so object do not support play animation function if it do not associate any animation during the module process.
+Object animation is created during the model process, so object do not support play animation function if it do not associate any animation during the model process.
 
 - Why browser do not response during API debugging？
 

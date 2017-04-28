@@ -2,37 +2,37 @@
 Concept Guide
 *********************
 
-Module and Scene
+model and Scene
 ==================
 
-There are two basic and import concepts in Momoda: module and scene.
+There are two basic and import concepts in Momoda: model and scene.
 
-Module
+model
 ^^^^^^^^^^^^
 
-Module is *polygon representation* of object. 3D object could presents something from real world, concept or just your imagination. 
+model is *polygon representation* of object. 3D object could presents something from real world, concept or just your imagination. 
 
-Module in Momoda shares the same of idea of 3D object in general, those 3D object could be organized and put into 3D scene like Lego.
+model in Momoda shares the same of idea of 3D object in general, those 3D object could be organized and put into 3D scene like Lego.
 
-Momoda also provides ‘official’ module library and could be used for free during 3D scene creation. User could also leverage uinnova’s profession service to create customized modules. Besides, Momoda also provide a 3DSMax plugin which could upload 3D object created in 3DSMax to Momoda’s module library, and user could create and use their own module using this plugin, which make Momoda very extensible in term of module creation.
+Momoda also provides ‘official’ model library and could be used for free during 3D scene creation. User could also leverage uinnova’s profession service to create customized models. Besides, Momoda also provide a 3DSMax plugin which could upload 3D object created in 3DSMax to Momoda’s model library, and user could create and use their own model using this plugin, which make Momoda very extensible in term of model creation.
 
 |
 
 
 Scene
 ^^^^^^^^^^^^
-Scene this one of the basic concept in Momoda. By use momoda’s free drawing studio, user can place , combine and layout 3D modules/objects into a scene in drag and drop fashion. Typical scene could be campus, a factory, a harbor, and any another things you may think of. We call them “Momoda Scene”.
+Scene this one of the basic concept in Momoda. By use momoda’s free drawing studio, user can place , combine and layout 3D models/objects into a scene in drag and drop fashion. Typical scene could be campus, a factory, a harbor, and any another things you may think of. We call them “Momoda Scene”.
 
 Momoda scene are stored in Momoda Cloud, which could be opened by own later on for editing, preview, or API debugging. Momoda scene can also be download and running locally as “Momoda Offline Edition” (may need purchase license issued by uinnova inc.).
 
 |
 
-Module Library
+model Library
 ==================
 
-There are three common objects in right navigation bar of momoda studio: module, texture and function.
+There are three common objects in right navigation bar of momoda studio: model, texture and function.
 
-- **Module**
+- **model**
 
 Objects like building, car, people, desk, etc. User could also upload their custom objects through Momoda 3DSMax plugin.
 
@@ -94,7 +94,7 @@ Buildings (do not includes building facade)
 API Developement
 ===================
 
-Mododa supports online development via **Momoda API developing web page**. 
+Momoda supports online development via **Momoda API developing web page**. 
 
 |
 
