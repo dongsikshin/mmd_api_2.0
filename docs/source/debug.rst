@@ -1,8 +1,8 @@
-***************
-Online Debug
-***************
+****************
+Try API Online 
+****************
 
-You may try Momoda API online by click http://uinnova.com:9010/mmdapi
+You can try Momoda API online by click http://uinnova.com:9010/mmdapi
 
 .. warning::
 
