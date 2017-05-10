@@ -1,6 +1,8 @@
 *********************
-Deploy 
-*******************
+Deploy
+*********************
+
+|
 
 Step 1: Click ont the button shown below to download scene and API code to your PC
 
