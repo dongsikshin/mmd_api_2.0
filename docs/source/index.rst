@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to uBuilder API 2.0's documentation
-==========================================
+============================================
 
 |
 

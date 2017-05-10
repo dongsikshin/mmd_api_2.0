@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Momoda API 2.0 documentation build configuration file, created by
+# uBudiler API 2.0 documentation build configuration file, created by
 # sphinx-quickstart on Wed Apr 19 09:41:18 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -45,7 +45,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Momoda API 2.0'
+project = u'uBudiler API 2.0'
 copyright = u'2017, uinnova inc.'
 author = u'uinnova inc.'
 
@@ -128,7 +128,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'MomodaAPI20.tex', u'Momoda API 2.0 Documentation',
+    (master_doc, 'MomodaAPI20.tex', u'uBudiler API 2.0 Documentation',
      u'uinnova inc.', 'manual'),
 ]
 
@@ -138,7 +138,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'momodaapi20', u'Momoda API 2.0 Documentation',
+    (master_doc, 'momodaapi20', u'uBudiler API 2.0 Documentation',
      [author], 1)
 ]
 
@@ -149,7 +149,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'MomodaAPI20', u'Momoda API 2.0 Documentation',
+    (master_doc, 'MomodaAPI20', u'uBudiler API 2.0 Documentation',
      author, 'MomodaAPI20', 'One line description of project.',
      'Miscellaneous'),
 ]
