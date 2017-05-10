@@ -2,7 +2,7 @@
 Overview
 *********************
 
-Momoda API provides following functions: 
+uBuilder API provides following functions: 
 
 .. image:: images/functions.png
     :align: center

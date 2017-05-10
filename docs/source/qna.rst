@@ -2,13 +2,13 @@
 Q & A
 *********************
 
-- Does Momoda API using the same syntax/library as Javascript ？
+- Does uBuilder API using the same syntax/library as Javascript ？
 
-Momoda API use javascript-like syntax, which is NOT exactly the same as javascript. For instance, there is no document object or windows object in Momoda API.
+uBuilder API use javascript-like syntax, which is NOT exactly the same as javascript. For instance, there is no document object or windows object in uBuilder API.
 
 - How to load my 3D scene into API developing UI?
 
-In Momoda API online development page, input your scene ID, then click “NEW” button. 
+In uBuilder API online development page, input your scene ID, then click “NEW” button. 
 
 - How to associate my API scripts to existing scene ？
 
@@ -20,7 +20,7 @@ Object animation is created during the model process, so object do not support p
 
 - Why browser do not response during API debugging？
 
-Momoda API debugging requires 3D scene, which is resource consuming. Open more than one scenes at the same may slow the computer or even crash your browser.  it is recommended that *simultaneously* opened 3D scene is *less than 3*.
+uBuilder API debugging requires 3D scene, which is resource consuming. Open more than one scenes at the same may slow the computer or even crash your browser.  it is recommended that *simultaneously* opened 3D scene is *less than 3*.
 
 - Why some object do not response to click event？
 

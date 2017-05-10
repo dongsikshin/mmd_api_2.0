@@ -2,7 +2,7 @@
 Try API Online 
 ****************
 
-You can try Momoda API online by click http://uinnova.com:9010/mmdapi
+You can try uBuilder API online by click http://uinnova.com:9010/mmdapi
 
 .. warning::
 

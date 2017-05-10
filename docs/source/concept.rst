@@ -94,14 +94,14 @@ Buildings (do not includes building facade)
 API Developement
 ===================
 
-Momoda supports online development via **Momoda API developing web page**. 
+Momoda supports online development via **uBuilder API developing web page**. 
 
 |
 
 Create New API Project
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-There a two pane in developing web page, left pane is for script editing, right pane is for running scripts in 3D scene. To begin a new API development project, visit the  Momoda API developing web page, input the ID of target 3D  scene, then click ``New`` button.
+There a two pane in developing web page, left pane is for script editing, right pane is for running scripts in 3D scene. To begin a new API development project, visit the  uBuilder API developing web page, input the ID of target 3D  scene, then click ``New`` button.
 
 Deploy API Project to Scene
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -112,7 +112,7 @@ To includes API script into your own scene, simply copy all the script source co
 Keyboard Shortcuts
 ^^^^^^^^^^^^^^^^^^^
 
-Below are keyboard shortcuts in *Momoda API debug page*:
+Below are keyboard shortcuts in *uBuilder API debug page*:
 
 - ``Ctrl+Enter`` Run Script
 - ``Ctrl+R`` Reset Scene 
@@ -123,7 +123,7 @@ Below are keyboard shortcuts in *Momoda API debug page*:
 API Namespace
 ^^^^^^^^^^^^^^
 
-Momoda API functions are grouped in following namespaces:
+uBuilder API functions are grouped in following namespaces:
 
 .. csv-table::
     :header: Namespace, Description
