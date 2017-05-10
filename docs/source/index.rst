@@ -20,6 +20,7 @@ Momoda API supports fetch and interact with external data source. Through Momoda
    functions
    api_ref
    debug
+   deploy
    qna
    history
 
